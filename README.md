@@ -1,0 +1,1 @@
+Spring project that makes API calls to spotify, top get a user's top track, and stores it in a local database. also compares the top track to any existing top track and notify's the user if it has changed.
