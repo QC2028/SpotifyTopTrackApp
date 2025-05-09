@@ -18,8 +18,8 @@ public class SpotifyClient {
 	
 	public String getTopTrackName() {
 		
-		HttpHeaders headers = new HttpHeaders();
-		headers.setBearerAuth("BQAo8wpcg_XjZd2En3EwCydoipvJHAvB6qs7_u4CVe0Hgyw1jCFygnAcbnkGr8j8JXudvwGrCBJJUW4RWOu7ftW66LFw-bS7GdWf340hyBz3oxa4uf4QhkTUd9wYYvUyyLnFp12L-P2OXOKbqJTLrOwNsz6Qwe-u5iocQ1m5fv2F69PTkeoGacWPsoVu0uB4S2d8cvRnQx3vwsPT-NBUDxSw");
+		HttpHeaders headers = new HttpHeaders(); //set auth token from spotify ouath2 on postman
+		headers.setBearerAuth("BQBVEUyMVLk6lnmK-ZIWx0uMqmio4jqW737QkzmkirBk3GFPgQq9FfUeNMQkDrM89p9iXeEGHQrEcgN4UPmquQ8xB5HHpRJRomhqsvpasZJKuqtrQH4raT9WHrOikpW31P1g2tiRmva3-FYdpHwtM10gQaVBJeqSOqZdvqh1E_Q6DIb7FNwD0POfBOBE6m-D9fAYqERYybwNvDC8IdbhjHxn4gUH");
 		String url = "https://api.spotify.com/v1/me/top/tracks?limit=1";
 		HttpEntity<Void> entity = new HttpEntity<>(headers);
 		

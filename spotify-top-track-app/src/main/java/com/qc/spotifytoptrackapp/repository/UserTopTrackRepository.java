@@ -8,4 +8,6 @@ import com.qc.spotifytoptrackapp.entity.UserTopTrack;
 @Repository
 public interface UserTopTrackRepository extends JpaRepository<UserTopTrack, Long> {
 	
+	// Fetch all top tracks for a given userId
+    UserTopTrack findByUserId(String userId);
 }
